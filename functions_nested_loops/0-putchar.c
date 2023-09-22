@@ -2,7 +2,7 @@
 
 /**
  * main - this is a function
- * Retrun: returns 0
+ * Return: returns 0
  */
 int main(void)
 {
