@@ -3,7 +3,7 @@
 /**
  * print_last_digit - Print the last digit of a number
  * @a: The number to compute the last digit of
- *
+ * jack-bauer - print every minute of the day
  * Return: The last digit of @a
  */
 int print_last_digit(int a)
@@ -19,6 +19,9 @@ int print_last_digit(int a)
 	return (last_digit);
 }
 
+/**
+ * jack_bauer - Print every minute of the day
+ */
 void jack_bauer(void)
 {
 	int hour, minute;
