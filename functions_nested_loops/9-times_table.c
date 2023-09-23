@@ -4,30 +4,37 @@
  * times_table - Prints the 9 times table
  * Description: This function prints the 9 times table in a specific format.
  *              It includes commas, spaces, and newlines for proper alignment.
+ *
  * Return: void (no return value)
  */
 void times_table(void)
+
 {
-	int row, column, product;
+	int x, y, z, u, d;
 
-	for (row = 0; row <= 9; row++)
+	for (x = 0; x <= 9; x++)
 	{
-		for (column = 0; column <= 9; column++)
+		for (y = 0; y <= 9; y++)
 		{
-			product = (row * column);
-
-			if (column == 0)
+			z = x = y;
+			if (z > 9)
 			{
-				_putchar('0');
+				u = z % 10;
+				d = (z - u) / 10;
+				_putchar(44);
+				_putchar(32);
+				_putchar(d + '0');
+				_putchar(u + '0');
 			}
 			else
 			{
-				_putchar(',');
-				_putchar(' ');
-
-				if (product < 10)
-					_putchar(' ');
-				_putchar((product % 10) + '0');
+				if (y != 0)
+				{
+					_putchar(44);
+					_putchar(32);
+					_putchar(32);
+				}
+				_putchar(z + '0');
 			}
 		}
 		_putchar('\n');
