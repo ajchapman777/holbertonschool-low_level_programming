@@ -4,8 +4,8 @@ int main(void)
 {
 	char *s = "heilo";
 	char *y = "oleh";
-	unsigned int n;
+	char *n;
 
-	n = strspn(s, y);
-	printf("%d\n", n);
+	n = strpbrk(s, y);
+	printf("%s\n", n);
 }
