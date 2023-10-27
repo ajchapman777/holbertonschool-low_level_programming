@@ -1,10 +1,9 @@
 #include "main.h"
+#include <stdlib.h>
+#include <time.h>
 /**
- * _atoi - a function that copies the string pointed to by src
- * @i: copy to
- * @d: copy from
- * @n: parameter
- * Return: the int converted from the string
+ * _atoi - a function
+ * Return: 0
  */
 int _atoi(char *s)
 {
