@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * char *_strcpy - a function that copies the string pointed to by src
- * @dest: copy to
- * @src: copy from
+ * _atoi - a function that copies the string pointed to by src
+ * @i: copy to
+ * @d: copy from
+ * @n: parameter
  * Return: the int converted from the string
  */
 int _atoi(char *s)
@@ -30,9 +31,15 @@ int _atoi(char *s)
 				digit = -digit;
 			n = n * 10 + digit;
 			f = 1;
-
-
-			return (n);
+			if (s[i + 1] > '9')
+				break;
+			f = 0;
+		}
+		i++;
+	}
+	if (f == 0)
+		return (0);
+	return (n);
 		}
 	}
 }
