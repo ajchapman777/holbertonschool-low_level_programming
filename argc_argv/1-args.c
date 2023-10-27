@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints number of arguments 
+ * main - prints number of arguments
  * @argc: arguments count
  * @argv: argument vector
  * Return: 0
