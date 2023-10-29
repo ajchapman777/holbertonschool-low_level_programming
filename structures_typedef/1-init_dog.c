@@ -1,7 +1,8 @@
 #include "dog.h"
 #include <stdio.h>
+
 /**
- * init_dog: initializes a dog
+ * init_dog  - initializes a dog
  * @d: pointer to dog
  * @name: name of dog
  * @age: age of dog
