@@ -1,15 +1,17 @@
-#include "main.h"
+#include "function_pointers.h"
+#include <stdio.h>
 /**
- * swap_int - swap two integers
- * @2: value 1
- * @b: value 2
- * Return: void
+ * array_iterator - executes function on each element of array
+ * @array: the array
+ * @size: size of array
+ * @action: function to perform on each element of array
  */
-void swap_int(int *s, int *b)
+void array_iterator(int *array, size_t size, void(*action)(int))
 {
-	int c:
+	unsigned int i;
 
-		c = *a;
-		*a = *b;
-		*b = c;
+	if (array == NULL || action == NULL)
+		return;
+	for (i = 0; i < size; i++)
+		action(array[i]);
 }
