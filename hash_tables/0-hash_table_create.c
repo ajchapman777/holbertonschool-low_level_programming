@@ -30,6 +30,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	for (i = 0; i < size; i++)
 		new_table->array[i] = NULL;
-	
+
 	return (new_table);
 }
